@@ -7,7 +7,7 @@ The goal is to predict the missing value of electricity consumption of 1000 user
 
 2- To predict the missing electricity consumption values of 1,000 users, I used a nearest-neighbor approach based on similarity in consumption patterns. Specifically, for each user with missing values, I identified the 7 most similar users from the complete dataset (50,000 users) using the Euclidean distance. These nearest neighbors were used to impute the missing values.
 
-To handle the large scale of the data efficiently, the process was GPU-accelerated using a function fill_missing_with_closest_columns_gpu, which allowed for fast computation of pairwise distances and batch-wise processing (batch size = 100). This significantly reduced runtime while maintaining prediction accuracy.
+To handle the large scale of the data efficiently, the process was GPU-accelerated using a function fill_missing_with_closest_columns_gpu, which allowed for fast computation of pairwise distances and batch-wise processing (batch size = 100). This significantly reduced runtime while maintaining prediction accuracy.\\
 
 3. Code: will be available soon.
 
